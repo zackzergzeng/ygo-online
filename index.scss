@@ -10,77 +10,112 @@
     width: 100%;
     height: 100vh;
     float: left;
-    .hand{
+    .top{
       width: 100%;
-      height: 15%;
-      // padding: 1%;
-    }
-    .game-zoom{
-      width: 100%;
-      height: 70%;
-      .opponent{
-        img{
-          transform: rotate(180deg);
-        }
-      }
-      .myself{
-        
-      }
-      .game-side{
-        width: 15%;
+      height: 60px;
+      .player-info{
+        width: calc(50% - 30px);
         height: 100%;
         float: left;
-        .card-contain{
-          height: 20%;
+        // padding: 1%;
+        .life-point{
+          width: 100%;
+          height: 50%;
+          background-color: red;
+          text-align: center;
+          // span{
+          //   margin-left: 50%;
+          // }
+        }
+        .player-name{
+          
+        }
+        .opponent{
+          text-align: right;
         }
       }
-      .game-center{
-        width: 70%;
+      .turn-number{
+        width: 60px;
         height: 100%;
         float: left;
-        .magic-trap-zoom{
-          height: 20%;
-        }
-        .monster-zoom{
-          height: 20%;
-        }
-        .ex-zoom{
-          height: 20%;
-        }
-        .card-contain{
-          width: 20%;
-        }
-      }
-      .card-contain{
-        width: 100%;
-        height: 100%;
-        float: left;
-        border: 1px solid black;
-        box-sizing: border-box;
         text-align: center;
-        .card-number-top{
-          height: 15%;
-          position: relative;
-          top: 0;
-          font-size: 100%;
-        }
-        .card-number-bottom{
-          height: 15%;
-          position: relative;
-          bottom: 0;
-          font-size: 100%;
-        }
-        .card{
-          height: 70%;
+      }
+    }
+    .game-zone{
+      width: 100%;
+      height: calc(100% - 60px);
+      .hand{
+        width: 100%;
+        height: 13%;
+        // padding: 1%;
+      }
+      .card-zone{
+        width: 100%;
+        height: 70%;
+        .opponent{
           img{
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;
+            transform: rotate(180deg);
           }
         }
-        .card-horizontal{
-          transform: rotate(-90deg);
+        .myself{
+          
+        }
+        .side{
+          width: 15%;
+          height: 100%;
+          float: left;
+          .card-contain{
+            height: 20%;
+          }
+        }
+        .field{
+          width: 70%;
+          height: 100%;
+          float: left;
+          .magic-trap-zone{
+            height: 20%;
+          }
+          .main-monster-zone{
+            height: 20%;
+          }
+          .ex-monster-zone{
+            height: 20%;
+          }
+          .card-contain{
+            width: 20%;
+          }
+        }
+        .card-contain{
+          width: 100%;
+          height: 100%;
+          float: left;
+          border: 1px solid black;
+          box-sizing: border-box;
+          text-align: center;
+          .card-number-top{
+            height: 15%;
+            position: relative;
+            top: 0;
+            font-size: 100%;
+          }
+          .card-number-bottom{
+            height: 15%;
+            position: relative;
+            bottom: 0;
+            font-size: 100%;
+          }
+          .card{
+            height: 70%;
+            img{
+              width: auto;
+              height: auto;
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          .card-horizontal{
+            transform: rotate(-90deg);
+          }
         }
       }
     }
