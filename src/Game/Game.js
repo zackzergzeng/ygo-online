@@ -3,7 +3,7 @@ import CardDetail from '../CardDetail/CardDetail';
 import Message from '../Message/Message';
 import Chat from '../Chat/Chat';
 import Hand from '../Hand/Hand';
-import Side from '../Side/Side';
+// import Side from '../Side/Side';
 import Field from '../Field/Field';
 
 class Game extends React.Component{
@@ -28,16 +28,12 @@ class Game extends React.Component{
           </div>
           <div className="game-zone">
             <Hand/>
-            <div className="card-zone">
-              <Side></Side>
-              <Field></Field>
-              <Side></Side>
-            </div>
+            <Field/>
             <Hand/>
           </div>
         </div>
         <CardDetail/>
-        <div class="right">
+        <div className="right">
           <Message/>
           <Chat/>
         </div>

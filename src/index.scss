@@ -23,9 +23,6 @@
           height: 50%;
           background-color: red;
           text-align: center;
-          // span{
-          //   margin-left: 50%;
-          // }
         }
         .player-name{
           
@@ -41,8 +38,11 @@
         text-align: center;
       }
     }
+    .turn-zone{
+      width: 100px;
+    }
     .game-zone{
-      width: 100%;
+      width: calc(100% - 100px);
       height: calc(100% - 60px);
       .hand{
         width: 100%;
